@@ -37,7 +37,6 @@ int main(void) {
 	int ulazak = 0;
 	srand(time(NULL));
 	predstavljanje(ulazak);
-	getchar();
 	PlaySound(NULL, 0, 0);
 	return 0;
 }
@@ -92,6 +91,7 @@ int biranje_tezine() {
 		return tezina;
 	}
 	else {
+		ocisti_ekran();
 		printf("Pogresan unos!\n");
 		getchar();
 		return biranje_tezine();
@@ -289,6 +289,7 @@ void zavrsni_meni(int redovi, int kolone, char* ime, int broj_poteza, int tezina
 	int opcija;
 	printf("Vas izbor: ");
 	scanf("%d", &opcija);
+	getchar();
 	if (opcija == 1) {
 		ocisti_ekran();
 		nivo(redovi, kolone, ime, tezina);
@@ -310,6 +311,7 @@ void zavrsni_meni(int redovi, int kolone, char* ime, int broj_poteza, int tezina
 		printf("Hvala sto ste igrali nasu igru!\n");
 	}
 	else {
+		ocisti_ekran();
 		printf("Pogresan unos!\n");
 		zavrsni_meni(redovi, kolone, ime, broj_poteza, tezina);
 	}
@@ -365,7 +367,7 @@ void predstavljanje(int ulazak) {
 	printf("Dobrodosli!!! \n");
 	printf("Ovo je igrica - Memorija. Nadji sve parove! :) \n");
 	printf("Vase ime: ");
-	char ime[20];
+	char ime[35];
 	scanf("%19s", ime);
 	ocisti_ekran();
 	printf("Zdravo, %s!!!\n", ime);
@@ -378,13 +380,13 @@ void prikaz_poteza_i_cuvanje_poteza(int redovi, int kolone, char* ime, int broj_
 	printf("Vas izbor: ");
 	int izbor;
 	scanf("%d", &izbor);
+	getchar();
 	if (izbor == 1) {
 		sacuvaj_u_dat(redovi, kolone, ime, broj_poteza, tezina, "istorija_igranja.txt");
 	}
 	else if (izbor == 2) {
 		ocisti_ekran();
 		printf("Ti to mozes!");
-		getchar();
 		getchar();
 	}
 	else {
