@@ -339,7 +339,6 @@ void sacuvaj_u_dat(int redovi, int kolone, char* ime, int broj_poteza, int tezin
 	fclose(istorija_igranja);
 	printf("Upisan je rezultat u sistem!");
 	getchar();
-	getchar();
 	ocisti_ekran();
 }
 
