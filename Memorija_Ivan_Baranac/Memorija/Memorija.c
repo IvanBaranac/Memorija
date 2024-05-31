@@ -357,7 +357,6 @@ void procitaj_iz_dat(int redovi, int kolone, char* ime, int broj_poteza, int tez
 	fclose(datoteka);
 	if (poziv == 1) {
 		getchar();
-		getchar();
 		ocisti_ekran();
 		zavrsni_meni(redovi, kolone, ime, broj_poteza, tezina);
 	}
