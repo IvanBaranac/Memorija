@@ -15,7 +15,7 @@
 
 void predstavljanje(int ulazak);
 void ocisti_ekran();
-void pocetni_meni(int ulazak);
+void pocetni_meni(int ulazak,char* ime);
 int biranje_tezine();
 void zavrsni_meni(int redovi, int kolone, char* ime, int broj_poteza, int tezina);
 void nivo(int redovi, int kolone, char* ime, int tezina);

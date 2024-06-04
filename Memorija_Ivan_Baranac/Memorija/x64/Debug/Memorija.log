@@ -1,4 +1,3 @@
 ﻿  Memorija.c
 D:\Memorija\Memorija\Memorija_Ivan_Baranac\Memorija\Memorija.c(38,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\Memorija\Memorija\Memorija_Ivan_Baranac\Memorija\Memorija.c(44,42): warning C4029: declared formal parameter list different from definition
   Memorija.vcxproj -> D:\Memorija\Memorija\Memorija_Ivan_Baranac\Memorija\x64\Debug\Memorija.exe
